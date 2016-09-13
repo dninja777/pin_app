@@ -4,6 +4,7 @@ class PinsController < ApplicationController
     def index
         @pins = Pin.all.order("created_at DESC")
     end
+    
     def show
         @pin = Pin.find params[:id]
     end
